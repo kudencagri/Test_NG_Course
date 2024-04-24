@@ -1,0 +1,20 @@
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!--          her class kendi beforeTestini çalıştırır           -->
+
+<suite name="MySuit">
+    <test  name="myTest1">
+        <classes>
+            <class name="Gun03._02_Intro"></class>
+
+        </classes>
+    </test>
+
+    <test  name="myTest2">
+        <classes>
+
+            <class name="Gun03._03_Intro"></class>
+        </classes>
+    </test>
+</suite>
+
