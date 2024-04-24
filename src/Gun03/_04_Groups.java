@@ -1,4 +1,4 @@
-package Gun03.XML;
+package Gun03;
 
 import org.testng.annotations.Test;
 

@@ -12,7 +12,7 @@
         <!-- hangi classlar çalışacak -->
 
         <classes>
-            <class name="Gun03.XML._04_Groups"></class>
+            <class name="Gun03._04_Groups"></class>
         </classes>
 
     </test>

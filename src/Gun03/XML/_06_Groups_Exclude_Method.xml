@@ -1,0 +1,24 @@
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MySuit">
+    <test  name="myTest1">
+        <!-- hangi grubların çalışacak  -->
+        <groups>
+            <run>
+                <exclude name="Smoke Test"></exclude>
+            </run>
+        </groups>
+
+        <!-- hangi classlar çalışacak -->
+
+        <classes>
+            <class name="Gun03._04_Groups">
+                <methods>
+                    <exclude name="Test5"></exclude>         <!-- metodlardan test 5 çalışmasın -->
+                </methods>
+            </class>
+            
+        </classes>
+
+    </test>
+</suite>
