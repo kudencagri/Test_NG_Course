@@ -1,0 +1,19 @@
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MySuit">
+    <test  name="myTest1">
+        <!-- hangi grubların çalışacak -->
+        <groups>
+            <run>
+                <include name="Smoke Test"></include>
+            </run>
+        </groups>
+
+        <!-- hangi classlar çalışacak -->
+
+        <classes>
+            <class name="Gun03.XML._04_Groups"></class>
+        </classes>
+
+    </test>
+</suite>
