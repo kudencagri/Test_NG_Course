@@ -1,5 +1,9 @@
 package Utility;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.testng.Assert;
+
 public class MyFunc {
     public static void Bekle(int sn){
 
@@ -8,7 +12,12 @@ public class MyFunc {
     } catch (InterruptedException e) {
         throw new RuntimeException(e);
     }
+}
 
+// çoğu yerde aynı mesaj doğrulaması kullanıldığında ortak fonksiyonları yer aldığı myfucna taşındı
+public static void successMessageValidation(){
+    WebElement AssertControl=BaseDriver.driver.findElement(By.xpath("//div[@class='alert alert-success alert-dismissible']"));
+    Assert.assertTrue(AssertControl.getText().toLowerCase().contains("success"));
 }
 
 }
