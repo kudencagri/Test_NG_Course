@@ -1,0 +1,21 @@
+TestNg XML dosyası
+çoklu çalışmalar ,parametre, göndermeler, pararlel testler, group çalışmalar
+/*
+ * @BeforeSuit   -> herşeyi kapsar.
+ *   @BeforeTest  -->>  içinde çok metod, group class olan test Grubu
+ *
+ *     @BeforeGroup
+ *
+ *         @BeforeClass
+ *             @BeforeMetod
+ *                @Test test1()
+ *             @AfterMetod
+ *         @AfterClass
+ *
+ *     @AfterGroup
+ *
+ *   @AfterTest
+ *
+ * */
+
+ aynı yaklaşım <hmtl> tarzıyla yazılıyor.
