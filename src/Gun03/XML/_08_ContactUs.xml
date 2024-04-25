@@ -4,6 +4,12 @@
     <test  name="myTest1">
         <parameter name="mesaj" value="Merhaba Testing Dünyası"></parameter>
 
+        <classes>
+            <class name="Gun03._06_ContactUs"></class>
+        </classes>
+    </test>
+    <test  name="myTest2">
+        <parameter name="mesaj" value="TestNg nin en önemli özelliği  XML farkı"></parameter>
 
         <classes>
             <class name="Gun03._06_ContactUs"></class>
