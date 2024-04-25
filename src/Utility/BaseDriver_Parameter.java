@@ -4,7 +4,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
@@ -26,11 +28,29 @@ public class BaseDriver_Parameter {
         logger.setLevel(Level.SEVERE); // sadece ERROR ları göster
 
        // Xml den gelen browser tipine göre istenilen neyse onu çalıştır.
-        if (browserTipi.equals("chrome"))
-        driver = new ChromeDriver();
+        switch (browserTipi.toLowerCase())
+        {
+            case "firefox" :
+                driver=new FirefoxDriver();
+                break;
+            case  "safari" :
+                driver=new SafariDriver();
 
-        if (browserTipi.equals("firefox"))
-        driver=new FirefoxDriver();
+            case "edge":
+                driver=new EdgeDriver();
+
+            default:
+                driver=new ChromeDriver();
+
+        }
+
+
+
+//        if (browserTipi.equals("chrome"))
+//        driver = new ChromeDriver();
+//
+//        if (browserTipi.equals("firefox"))
+//        driver=new FirefoxDriver();
 
         driver.manage().window().maximize(); // Ekranı max yapıyor.
         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20)); // 20 sn mühlet: sayfayı yükleme mühlet
