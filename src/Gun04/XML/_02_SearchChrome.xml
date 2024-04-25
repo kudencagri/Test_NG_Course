@@ -11,7 +11,7 @@
         <parameter name="Mesaj" value="samsung"></parameter>
         <parameter name="browserTipi" value="firefox"></parameter>
         <classes>
-            <class name="Gun04._02_SearchFunctionality_ParameterDriver"></class>
+             <class name="Gun04._02_SearchFunctionality_ParameterDriver"></class>
         </classes>
     </test>
 
