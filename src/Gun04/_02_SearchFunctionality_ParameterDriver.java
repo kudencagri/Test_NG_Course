@@ -1,7 +1,7 @@
 package Gun04;
 
 import Utility.BaseDriver;
-import Utility.MyFunc;
+import Utility.BaseDriver_Parameter;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
@@ -13,7 +13,7 @@ import java.util.List;
 
 /* siteyi  açın search de mac yazıp aratın çıkan sonuçlarda hepsi mac mi kontrol edin.
 * */
-public class _01_SearchFunctionality extends BaseDriver {
+public class _02_SearchFunctionality_ParameterDriver extends BaseDriver_Parameter {
     @Test
     @Parameters("Mesaj")
     public void Test(String GelenMesaj){
