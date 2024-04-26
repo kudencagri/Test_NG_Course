@@ -1,5 +1,5 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="MySuit">
+<suite name="MySuit"  parallel="tests" thread-count="2">
     <test name="myTest1">
         <parameter name="Mesaj" value="mac"></parameter>
         <parameter name="browserTipi" value="chrome"></parameter>

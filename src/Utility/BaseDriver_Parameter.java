@@ -18,7 +18,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class BaseDriver_Parameter {
-    public static WebDriver driver; // SingletonDriver method
+    public  WebDriver driver; // SingletonDriver method
     public static WebDriverWait wait;
     @BeforeClass
     @Parameters("browserTipi")
@@ -41,11 +41,7 @@ public class BaseDriver_Parameter {
 
             default:
                 driver=new ChromeDriver();
-
         }
-
-
-
 //        if (browserTipi.equals("chrome"))
 //        driver = new ChromeDriver();
 //
