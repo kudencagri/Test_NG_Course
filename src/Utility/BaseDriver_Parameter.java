@@ -33,12 +33,9 @@ public class BaseDriver_Parameter {
             case "firefox" :
                 driver=new FirefoxDriver();
                 break;
-            case  "safari" :
-                driver=new SafariDriver();
-
             case "edge":
                 driver=new EdgeDriver();
-
+                 break;
             default:
                 driver=new ChromeDriver();
         }
