@@ -1,4 +1,4 @@
-package Gun05;
+package Gun06;
 
 import Utility.BaseDriver;
 import org.openqa.selenium.By;
@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 import java.util.List;
 
 // brands menusune gidin çıkan harflerle baş harflerinin öylemi başlıyor kontrol et
-public class _06_GenelSoru extends BaseDriver {
+public class _01_TODO extends BaseDriver {
 
     @Test
     public void BrandsValidation() {
