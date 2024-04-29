@@ -29,8 +29,8 @@ public class _05_Soru extends BaseDriver {
         int randomSecim= MyFunc.randomGenerator(wle.productList.size()); // random bir sayı üretildi
         String cartItemText=wle.productList.get(randomSecim).getText(); // random daki ürünün adı alındı
 
-//        wle.addToChart.get(randomSecim).click(); // ilgili Random ürünün wish butonuna tıklandı
-//        wle.shoppingCart.click();
+        wle.addToChart.get(randomSecim).click(); // ilgili Random ürünün wish butonuna tıklandı
+        wle.shoppingChart.click();
 
         boolean bulundu=MyFunc.listContainsString(wle.wishList, cartItemText);
         Assert.assertTrue(bulundu,"Sepet Listesinde aranan ürün bulunamadı");

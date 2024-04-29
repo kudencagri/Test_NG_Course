@@ -21,4 +21,8 @@ public class _03_WishListElement {
     public WebElement wishListLink;
     @FindBy(xpath = "//td[@class='text-left']/a")
     public List<WebElement> wishList;
+    @FindBy(xpath = "//span[text()='Add to Cart']")
+    public List<WebElement> addToChart;
+    @FindBy(linkText = "Shopping Cart")
+    public WebElement shoppingChart;
 }
