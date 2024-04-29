@@ -20,4 +20,7 @@ public static void successMessageValidation(){
     Assert.assertTrue(AssertControl.getText().toLowerCase().contains("success"));
 }
 
+public static int randomGenerator(int sinir){
+    return (int)(Math.random()*sinir);
+}
 }

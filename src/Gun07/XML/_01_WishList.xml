@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MySuit"  parallel="tests" thread-count="2">
+    <test name="myTest1">
+
+        <parameter name="searchText" value="ipod"></parameter>
+
+        <classes>
+            <class name="Gun07._01_WishList"></class>
+        </classes>
+
+    </test>
+
+
+</suite>
