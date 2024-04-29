@@ -35,15 +35,9 @@ public class _01_WishList extends BaseDriver {
         //wish liste giridli
         List<WebElement> wishList=driver.findElements(By.xpath("//td[@class='text-left']/a"));
 
-        boolean bulundu=false;
-        for (WebElement e : wishList){
+        //aradığımız ürün listede var mı yok mu?
+        boolean bulundu=MyFunc.listContainsString(wishList, wishItemText);
 
-            if (e.getText().toLowerCase().equals(wishItemText.toLowerCase()));
-            {
-                bulundu=true;
-                break;
-            }
-        }
         Assert.assertTrue(bulundu,"wish listede atanan ürün bulunmadı");
     }
 }

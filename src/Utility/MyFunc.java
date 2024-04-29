@@ -4,6 +4,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 
+import java.util.List;
+
 public class MyFunc {
     public static void Bekle(int sn){
 
@@ -14,13 +16,26 @@ public class MyFunc {
     }
 }
 
-// çoğu yerde aynı mesaj doğrulaması kullanıldığında ortak fonksiyonları yer aldığı myfucna taşındı
-public static void successMessageValidation(){
-    WebElement AssertControl=BaseDriver.driver.findElement(By.xpath("//div[@class='alert alert-success alert-dismissible']"));
-    Assert.assertTrue(AssertControl.getText().toLowerCase().contains("success"));
-}
+   // çoğu yerde aynı mesaj doğrulaması kullanıldığında ortak fonksiyonları yer aldığı myfucna taşındı
+   public static void successMessageValidation(){
+        WebElement AssertControl=BaseDriver.driver.findElement(By.xpath("//div[@class='alert alert-success alert-dismissible']"));
+        Assert.assertTrue(AssertControl.getText().toLowerCase().contains("success"));
+    }
 
-public static int randomGenerator(int sinir){
-    return (int)(Math.random()*sinir);
-}
+    public static int randomGenerator(int sinir){
+        return (int)(Math.random()*sinir);
+
+
+    }
+    public static boolean listContainsString(List<WebElement> list, String aranacakKelime){
+        boolean bulundu=false;
+        for(WebElement e: list) {
+            if (e.getText().toLowerCase().equals(aranacakKelime.toLowerCase())) {
+                bulundu = true;
+                break;
+            }
+        }
+
+        return bulundu;
+    }
 }
