@@ -22,9 +22,9 @@ public class _05_Soru extends BaseDriver {
     @Test
     public void addToCart() {
 
-        _04_PlaceOrder_ELementleri poe=new _04_PlaceOrder_ELementleri();
+
         _03_WishListElement wle=new _03_WishListElement();
-        poe.searchBox.sendKeys("ipod" + Keys.ENTER);
+        wle.searchBox.sendKeys("ipod" + Keys.ENTER);
 
         int randomSecim= MyFunc.randomGenerator(wle.productList.size()); // random bir sayı üretildi
         String cartItemText=wle.productList.get(randomSecim).getText(); // random daki ürünün adı alındı
