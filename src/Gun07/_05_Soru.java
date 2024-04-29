@@ -37,5 +37,5 @@ public class _05_Soru extends BaseDriver {
     }
 
 
-}{
+
 }
